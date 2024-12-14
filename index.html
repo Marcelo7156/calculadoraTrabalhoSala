@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav></nav>
+    <section>
+        <form action="">
+            <h3>CALCULADORA</h3>
+            <label for="id_numero1">NUMERO 1</label><br>
+            <input type="number" name="numero1" id="id_numero1" placeholder="Digite um numero..."><br><br>
+            <label for="id_numero2">NUMERO 2</label><br>
+            <input type="number" name="numero2" id="id_numero2" placeholder="Digite o segundo numero..."><br><br>
+
+            <form>
+                <input type="radio" name="calcular_escolha" id="somar" value="somar">
+                <label for="somar" class="tooltip">
+                    SOMAR
+                    <span class="tooltip-text"> 10 + 10 = 20</span>
+                </label>
+            
+                <input type="radio" name="calcular_escolha" id="subtrair" value="subtrair">
+                <label for="subtrair" class="tooltip">
+                    SUBTRAIR
+                    <span class="tooltip-text"> 22 - 10 = 12 </span>
+                </label>
+            
+                <input type="radio" name="calcular_escolha" id="multiplicar" value="multiplicar">
+                <label for="multiplicar" class="tooltip">
+                    MULTIPLICAR
+                    <span class="tooltip-text"> 3 x 3 = 9</span>
+                </label>
+            
+                <input type="radio" name="calcular_escolha" id="dividir" value="dividir">
+                <label for="dividir" class="tooltip">
+                    DIVIDIR
+                    <span class="tooltip-text"> 9 &divide; 3 = 3</span>
+                </label>
+            
+                <input type="radio" name="calcular_escolha" id="potenciacao" value="potenciacao">
+                <label for="potenciacao" class="pontencial tooltip">
+                    POTENCIAÇÂO
+                    <span class="tooltip-text"> 3<sup>2</sup> = 9</span>
+                </label>
+            
+                <input type="radio" name="calcular_escolha" id="radiacao" value="radiacao">
+                <label for="radiacao" class="tooltip">
+                    RADIAÇÃO
+                    <span class="tooltip-text"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msqrt>
+                            <mn>9</mn>
+                        </msqrt>
+                        <mo>=</mo>
+                        <mn>3</mn>
+                    </math></span>
+                </label>
+            
+                <input type="radio" name="calcular_escolha" id="porcentagem" value="porcentagem">
+                <label for="porcentagem" class="tooltip">
+                    PORCENTAGEM
+                    <span class="tooltip-text"> 10% de 90 = 9 </span>
+                </label>
+            </form>
+            
+
+            
+
+            <button type="button" class="calcular" onclick="pegarValor()">CALCULAR</button>
+
+            <h2 id="resultado"></h2>
+
+        </form>
+        <div>
+            <h2>Dados da calculadora</h2>
+            <p>Essa calculadora é capaz de: 
+                <div class="container">
+                    <div class="box">
+                        <div class="front">SOMAR</div>
+                        <div class="back">10 + 10 = 20</div>
+                    </div>
+                    <div class="box">
+                        <div class="front">SUBTRAIR</div>
+                        <div class="back">22 - 10 = 12</div>
+                    </div>
+                    <div class="box">
+                        <div class="front">MULTIPLICAR</div>
+                        <div class="back">3 x 3 = 9</div>
+                    </div>
+                    <div class="box">
+                        <div class="front">DIVIDIR</div>
+                        <div class="back"> 9 &divide; 3 = 3</div>
+                    </div>
+                    <div class="box">
+                        <div class="front">POTENCIAÇÃO</div>
+                        <div class="back">3<sup>2</sup> = 9</div>
+                    </div>
+                    <div class="box">
+                        <div class="front">RADIAÇÃO</div>
+                        <div class="back"><span class="tooltip-text"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msqrt>
+                                <mn>9</mn>
+                            </msqrt>
+                            <mo>=</mo>
+                            <mn>3</mn>
+                        </math></span></div>
+                    </div>
+                    <div class="box">
+                        <div class="front">PORCENTAGEM</div>
+                        <div class="back">10% de 90 = 9</div>
+                    </div>
+                </div>
+                
+            </p>
+            <p>Lembre-se que algumas contas são impossiveis na matematica.(exemplo a divisão por zero não existe!)</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por: Marcelo Pinheiro</p>
+        <p>Turma BNT - Noite</p>
+    </footer>
+    <script src="codigo.js"></script>
+</body>
+</html>
